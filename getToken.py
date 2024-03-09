@@ -41,3 +41,11 @@ def search_for_artist(token, artist_name):
     result = get(query_url, headers=headers)
     json_result = json.loads(result.content)
     return json_result
+
+def getArtist(token):
+    url = "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM"
+    headers = get_auth_header(token)
+
+    result = get(url, headers=headers)
+    json_result = json.loads(result.content)
+    return json_result

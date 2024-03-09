@@ -6,6 +6,6 @@ import json
 # Create your views here.
 def displayAPI(request):
     token = getToken.get_token()
-    response  = getToken.search_for_artist(token, "Frank Ocean")
-    response_str = response['artists']
+    response  = getToken.getArtist(token)
+    response_str = response["name"]
     return render(request, 'show.html', {'data' : response_str})
