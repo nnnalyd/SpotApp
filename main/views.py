@@ -7,5 +7,5 @@ import json
 def displayAPI(request):
     token = getToken.get_token()
     response  = getToken.getArtist(token)
-    response_str = response["name"]
+    response_str = response["images"]
     return render(request, 'show.html', {'data' : response_str})
