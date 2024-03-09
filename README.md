@@ -13,3 +13,16 @@ json
 On load of python files:
 
 have directory to SPOTAPP file
+
+# USAGE
+
+For development must have modules
+
+python-dotenv
+requests
+pipenv
+json
+
+On load of python files:
+
+have directory to SPOTAPP file
